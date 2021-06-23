@@ -9,7 +9,7 @@
     width: 100%;
     height: 60vh;
     position: relative;
-    background: url(/image/bg-pattern-intro.svg),linear-gradient(
+    background: url(../image/bg-pattern-intro.svg),linear-gradient(
         to right,
         hsl(13, 100%, 72%),
         hsl(353, 100%, 62%)
@@ -232,7 +232,7 @@
 }
 
 .description .description-content{
-    width: 100%;
+    width: 80%;
     display: flex;
     align-items: center;
     position: relative;
@@ -273,7 +273,7 @@
 @media (max-width: 991px){
     .header{
         height: 100vh;
-        background: url(images/bg-pattern-intro.svg);
+        background: url(../images/bg-pattern-intro.svg);
         background-position: center;
         background-size: 400%;
         padding: 4rem 1.5rem;
