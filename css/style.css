@@ -219,7 +219,8 @@
     min-height: 100vh;
     position: relative;
     padding: 10rem 0 3rem 10rem;
-    background: #fff
+    background: hsl(0, 26%, 96%);
+    z-index: 2;
 }
 
 .description h2{
@@ -270,10 +271,158 @@
 .description .description-content .description-content-rightcolumn .mobile-editor{
     display: none;
 }
+
+.services{
+    width: 100%;
+    padding: 8rem 10rem;
+    position: relative;
+    background: hsl(237, 17%, 21%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top-right-radius: 6rem;
+    border-bottom-left-radius: 6rem;
+}
+
+.services .services-rightcolumn{
+    flex-basis: 50%;
+}
+
+.services .services-rightcolumn h4{
+    font-size: 2.3rem;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 2rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+}
+
+.services .services-rightcolumn p{
+    font-size: 1.1rem;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+    line-height: 1.9rem;
+}
+
+.services .services-leftcolumn{
+    flex-basis: 40%;
+    position: relative;
+    background-image: url(../image/illustration-phones.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.services .services-leftcolumn .phone{
+    position: absolute;
+    left: -5rem;
+    top: -16rem;
+    z-index: 3;
+}
+
+.services .services-leftcolumn .circle-pattern{
+    position: absolute;
+    left: -25rem;
+    top: -50rem;
+    z-index: 1;
+    width: 250%;
+}
+
+.features{
+    width: 100%;
+    position: relative;
+    padding: 15rem 10rem 15rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: hsl(0, 26%, 96%);
+    z-index: 2;
+}
+
+.features .features-leftcolumn{
+    flex-basis: 50%;
+    position: relative;
+}
+
+.features .features-leftcolumn .desktop-illustration{
+    width: 150%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -16rem;
+}
+
+.features .features-leftcolumn .mobile-illustration{
+    display: none;
+}
+
+.features .features-rightcolumn{
+    flex-basis: 40%;
+    position: relative;
+}
+
+.features .features-rightcolumn h5{
+    font-size: 1.8rem;
+    color: hsl(208, 49%, 24%);
+    margin-bottom: 1.5rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+}
+
+.features .features-rightcolumn p{
+    font-size: .95rem;
+    color: hsl(208, 49%, 24%);
+    margin-bottom: 3rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+    line-height: 2.1rem;
+}
+
+footer{
+    width: 100%;
+    padding: 4rem 10rem 6rem;
+    background: hsl(240, 10%, 16%);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-top-right-radius: 6rem;
+}
+
+footer .footer-box{
+    flex-basis: 20%;
+}
+
+footer .footer-box h6{
+    font-size: 1rem;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+footer .footer-box ul li{
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+footer .footer-box ul li a{
+    text-decoration: none;
+    color: hsl(240, 2%, 79%);
+    font-size: 1rem;
+    transition: .5s;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+footer .footer-box ul li a:hover{
+    text-decoration: underline;
+}
+
+
 @media (max-width: 991px){
     .header{
         height: 100vh;
-        background: url(../images/bg-pattern-intro.svg);
+        background: url(../image/bg-pattern-intro.svg);
         background-position: center;
         background-size: 400%;
         padding: 4rem 1.5rem;
@@ -476,5 +625,122 @@
         font-size: 1.1rem;
         margin-bottom: 3rem;
     }
+    .services{
+        width: 100%;
+        padding: 8rem 10rem;
+        position: relative;
+        background: hsl(237, 17%, 21%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top-right-radius: 6rem;
+        border-bottom-left-radius: 6rem;
+    }
+    
+    .services .services-rightcolumn{
+        flex-basis: 50%;
+    }
+    
+    .services .services-rightcolumn h4{
+        font-size: 2.3rem;
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 2rem;
+        font-family: 'Overpass', sans-serif;
+        font-weight: 600;
+    }
+    
+    .services .services-rightcolumn p{
+        font-size: 1.1rem;
+        color: hsl(0, 0%, 100%);
+        font-family: 'Overpass', sans-serif;
+        font-weight: 300;
+        line-height: 1.9rem;
+    }
+    
+    .services .services-leftcolumn{
+        flex-basis: 40%;
+        position: relative;
+        background-image: url(../image/illustration-phones.svg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .services .services-leftcolumn .phone{
+        position: absolute;
+        left: -5rem;
+        top: -16rem;
+        z-index: 3;
+    }
+    
+    .services .services-leftcolumn .circle-pattern{
+        position: absolute;
+        left: -25rem;
+        top: -50rem;
+        z-index: 1;
+        width: 250%;
+    }
+    .services{
+        padding: 8rem 2rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .services .services-rightcolumn{
+        flex-basis: 100%;
+        text-align: center;
+        margin-top: 6rem;
+    }
+
+    .services .services-leftcolumn .phone{
+        position: absolute;
+        left: 125%;
+        transform: translateX(-50%);
+        top: -19rem;
+        z-index: 3;
+        width: 375px;
+    }
+
+    .features{
+        padding: 4rem 2rem;
+        flex-wrap: wrap;
+    }
+
+    .features .features-leftcolumn{
+        flex-basis: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .features .features-leftcolumn .desktop-illustration{
+        display: none;
+    }
+
+    .features .features-leftcolumn .mobile-illustration{
+        display: block;
+        width: 130%;
+        margin-bottom: 1.5rem;
+    }
+
+    .features .features-rightcolumn{
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .features .features-rightcolumn h5{
+        font-size: 1.7rem;
+    }
+
+    footer{
+        padding: 4rem 0 6rem;
+        flex-wrap: wrap;
+    }
+
+    footer .footer-box{
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+  
 }
 
